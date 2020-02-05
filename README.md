@@ -1,25 +1,38 @@
-# Savvy Coders Project Boilerplate Starter Kit
+# Ethan Mapel Header 1
 
-## Overview
+## Smaller Header
 
-This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
+# Back to big
 
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
+### Smallest Header?
 
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [Prettier](prettier.io)
+#### Can it go the smallest?
 
-## Get Started
+##### How small?
 
-**First and foremost,** make sure that your local machine is set up with all of the 'dev environment tooling' as per [this guide...](https://www.notion.so/codefinity/Setting-up-a-Local-Dev-Environment-97de62a546f943fbbc7a246b4785a343)
+###### Small small small
 
-Well, after establishing your directory structure on your local machine, (e.g. '~/Code/SavvyCoders'), kindly [follow these girections](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) - essentially, there should be a button 👆🏾that says **Use this template.**
+Adding normal text, paragraph.
 
-Once this repo has been created on your GitHub, you can click on the button to 'clone' it as usual. Once it's `clone`d to your local machine, kindly `cd` into the directory and **be sure to do:** `npm i` to get all of the goodies. If you see any _errors_ (warnings are 🙆🏾‍♂️) on Windows, you may have to do `npm install`.
+_Italicized text_
 
-Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom right of your screen). You should install these. 👍🏾
+**Bolded text**
 
-Update this README and make any other initial changes or 🌱 files, etc. Go ahead and do your usual `git` steps, etc. etc. etc.
+**_Both_**
 
-**Note:** This is a template repository, no need to 'fork it.
+If you just start typing and then **bold** a word and then _italicize the next part_...it **WORKS!**
+
+And then keep typing and ~~strikethrough~~ a word.
+
+- Item
+- Bullet
+
+1. Item
+    1. Sub-item
+    2. Another
+2. Second item.
+
+# Whoah.
+
+![The ol' smiling dog](https://i.redd.it/de150a9m37r31.jpg)
+[Click here for more amazing images like this! Search for them yourself.](http://www.google.com)
