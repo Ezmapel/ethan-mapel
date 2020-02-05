@@ -34,5 +34,4 @@ And then keep typing and ~~strikethrough~~ a word.
 
 # Whoah.
 
-![The ol' smiling dog](https://i.redd.it/de150a9m37r31.jpg)
-[Click here for more amazing images like this! Search for them yourself.](http://www.google.com)
+[![The ol' smiling dog](https://i.redd.it/de150a9m37r31.jpg)](http://www.google.com)
