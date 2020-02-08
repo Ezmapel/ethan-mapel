@@ -1,43 +1,29 @@
-// 'const' is not about IMMUTABILITY (ability to change) - it's about NO REASSIGNMENT.
-// OBJECTS can change. PRIMITIVES cannot.
-const me = {};
+const x = 7;
+const y = 10;
 
-// me = "23";
-// I CANNOT REASSIGN 'me'
+console.log(x !== y);
 
-me.name = "Ethan";
-// I CAN reassign the VALUE of key inside of 'me'
-
-console.log(me);
-
-me.lastname = "Mapel";
-me.car = "";
-
-console.log(me);
-
-const someone = {
-  name: "Kat",
-  lastname: "Smith",
-  pets: {
-    cat: "Charlie",
-    dog: "Twix"
-  }
+const me = {
+  name: "Ethan"
 };
 
-console.log(someone);
+const someone = {
+  name: "Ethan"
+};
 
-someone.lastname = "Smithy";
+console.log(me === someone); // false
 
-console.log(someone);
+// Will it spit out true or false? Weirdly enough, false
+// Primitives pass by value (it looks at the value)
+// Objects pass by reference (memory addresses, or memory reference...and two objects, even if they have the same contents, are stored in different memory references, and thus do not pass by reference, hence they churn out false)
 
-console.log(`Her favorite animal in the world is ${someone.pets.dog}.`);
+// BUT if we get down to the primitive level, then it can churn out a true
 
-console.log(someone["name"]);
+console.log(me.name === someone.name); // true
 
-let keyINeed = "pets";
-
-console.log(someone.keyINeed);
-
-// I MUST use BRACKET NOTATION if I need to use a VARIABLE for my key
-console.log(someone[keyINeed]);
-console.log(someone["keyINeed"]);
+// Next time:
+if (x === y) {
+  console.log("x and y are the same");
+} else {
+  console.log("not the same");
+}
