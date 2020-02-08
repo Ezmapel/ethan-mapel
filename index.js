@@ -1,13 +1,29 @@
-const age = 27;
-const name = "Ethan";
-const numOfYears = 0;
-// Create sentence.
-// Concatenation.
-// '.' notation is used to access KEYS within an OBJECT
-// 'log' is a METHOD.
-// We INVOKE the method with ().
-// We pass in an ARGUMENT.
+let name = "Ethan Mapel";
 
-console.log("My name is " + name + ".");
-console.log("I am " + age + " years old.");
-console.log("I have been coding for " + numOfYears " years")
+let favoriteSong = "Happy Birthday";
+
+let wage = 100;
+
+let age = 27;
+
+const onlyChild = false;
+
+let satistfied = false;
+
+let favoriteThing = "pretzels";
+
+console.log(typeof favoriteThing);
+
+favoriteSong = "Who Are You?";
+
+favoriteThing = null;
+
+console.log(typeof favoriteThing);
+
+age = 29;
+
+wage = 1000;
+
+satisfied = true;
+
+console.log(`My name is ${name} and my favorite song is ${favoriteSong}`);
