@@ -1,32 +1,45 @@
-let obj = {
-  parents: [
-    {
-      name: "Mary",
-      age: 45,
-      likes: ["hiking", "running", "swimming"]
-    },
-    {
-      name: "John",
-      age: 50
-    }
-  ]
-};
+// Objects are the only thing in java script that is PASS BY REFERENCE - they are passed by the memory location on the computer
+// How do you get an object TO PASS - by writing a for loop that iterates through to objects and test every key:value pair
 
-// console.log(obj);
+// Everything else is PASS BY VALUE - literally just the value
 
-for (const parent of obj.parents) {
-  console.log(parent);
+console.log("2" + 2);
+console.log(2 + "2");
+console.log(2 + 2);
+console.log("2" + "2");
+console.log(true + true);
+console.log(2 + true);
+
+console.log(true + true + "true" + "false");
+console.log(1 + 1 + "2" + "3");
+// once a string is encountered going from left to right, EVERYTHING is treated as a string from that point forward
+console.log(!"1" === false);
+// a string ALWAYS returns TRUE
+
+console.log("" === false);
+console.log("" == false);
+// NEVER USE A DOUBLE EQUAL - FUZZY EQUATORS
+
+// === means strict equal (both type & value)
+
+let num = 0;
+
+if (num === 0) {
+  console.log("OK");
+} else {
+  console.log("NOPE");
 }
 
-let key = "name";
-
-console.log(obj.parents[0][key]);
-
-// You cannot use . notation on an array...must use []
-// You can use either on an object (. or [])
-
-for (const stuffToDo of obj.parents[0].likes) {
-  console.log(stuffToDo);
+if (num === 0) {
+  console.log("OK1");
 }
 
-// MDN javascript hasOwnProperty
+if (num !== 0) {
+  console.log("NOPE1");
+}
+
+if (num === 0) {
+  console.log("OK2");
+}
+console.log("NOPE2");
+// Add in return and then it will kick you out of the function so it doesn't return BOTH
