@@ -1,45 +1,78 @@
-// Objects are the only thing in java script that is PASS BY REFERENCE - they are passed by the memory location on the computer
-// How do you get an object TO PASS - by writing a for loop that iterates through to objects and test every key:value pair
+let variableName = "a";
 
-// Everything else is PASS BY VALUE - literally just the value
+// bang indicator (!) says if variable (!variableName) is empty, give a falsy value, otherwise give truthy?
 
-console.log("2" + 2);
-console.log(2 + "2");
-console.log(2 + 2);
-console.log("2" + "2");
-console.log(true + true);
-console.log(2 + true);
-
-console.log(true + true + "true" + "false");
-console.log(1 + 1 + "2" + "3");
-// once a string is encountered going from left to right, EVERYTHING is treated as a string from that point forward
-console.log(!"1" === false);
-// a string ALWAYS returns TRUE
-
-console.log("" === false);
-console.log("" == false);
-// NEVER USE A DOUBLE EQUAL - FUZZY EQUATORS
-
-// === means strict equal (both type & value)
-
-let num = 0;
-
-if (num === 0) {
-  console.log("OK");
+if (!variableName) {
+  console.log("falsy");
 } else {
-  console.log("NOPE");
+  console.log("truthy");
 }
 
-if (num === 0) {
-  console.log("OK1");
+// Logical Operators
+// And (&&), Or (||)
+
+let food = "chicken";
+let drink = "";
+let snack = "chips";
+
+if (drink || food) {
+  console.log("That's a meal");
+} else {
+  console.log("you gonna be hungry");
 }
 
-if (num !== 0) {
-  console.log("NOPE1");
+if (drink && food) {
+  console.log("That's a meal");
+} else {
+  console.log("you gonna be hungry");
 }
 
-if (num === 0) {
-  console.log("OK2");
+if ((drink && food) || snack) {
+  console.log("That's a meal");
+} else {
+  console.log("you gonna be hungry");
 }
-console.log("NOPE2");
-// Add in return and then it will kick you out of the function so it doesn't return BOTH
+
+if (drink && food && snack) {
+  console.log("That's a meal");
+} else {
+  console.log("you gonna be hungry");
+}
+
+console.log("_______________");
+
+// Logical Operators
+// ? what do you expect each line to print?
+console.log(true && false);
+console.log(true || false);
+console.log(!true);
+console.log(!(true && false));
+console.log(false || !false);
+
+// Logical Operators and Truthy/Falsy
+// ? what do you expect each line to print?
+console.log("" && 0);
+console.log(undefined || null);
+console.log(!``);
+console.log(!(1 && "false"));
+console.log(NaN || !"true");
+
+console.log("_______________");
+
+// ? TO DO: using only logical operators (no comparison operators), write an if statement that prints "The number is zero" when num is 0.
+let num = 0;
+// * your if statement here *
+// if (!(num && 0)) {
+//   console.log("The number is zero");
+// } else {
+//   console.log("its not zero");
+// }
+
+console.log("_______________");
+
+// * your if statement here *
+if (!num) {
+  console.log("The number is zero");
+} else {
+  console.log("its not zero");
+}
