@@ -1,78 +1,26 @@
-let variableName = "a";
+// loops
+// don't use while loops much anymore - easy to create an accidental endless loop, and it has a variable defined outside of the local scope (outside the while loop)
 
-// bang indicator (!) says if variable (!variableName) is empty, give a falsy value, otherwise give truthy?
+// ? TO DO: create a for loop that TOTALS the numbers from 1 to 100
 
-if (!variableName) {
-  console.log("falsy");
-} else {
-  console.log("truthy");
-}
-
-// Logical Operators
-// And (&&), Or (||)
-
-let food = "chicken";
-let drink = "";
-let snack = "chips";
-
-if (drink || food) {
-  console.log("That's a meal");
-} else {
-  console.log("you gonna be hungry");
-}
-
-if (drink && food) {
-  console.log("That's a meal");
-} else {
-  console.log("you gonna be hungry");
-}
-
-if ((drink && food) || snack) {
-  console.log("That's a meal");
-} else {
-  console.log("you gonna be hungry");
-}
-
-if (drink && food && snack) {
-  console.log("That's a meal");
-} else {
-  console.log("you gonna be hungry");
-}
-
-console.log("_______________");
-
-// Logical Operators
-// ? what do you expect each line to print?
-console.log(true && false);
-console.log(true || false);
-console.log(!true);
-console.log(!(true && false));
-console.log(false || !false);
-
-// Logical Operators and Truthy/Falsy
-// ? what do you expect each line to print?
-console.log("" && 0);
-console.log(undefined || null);
-console.log(!``);
-console.log(!(1 && "false"));
-console.log(NaN || !"true");
-
-console.log("_______________");
-
-// ? TO DO: using only logical operators (no comparison operators), write an if statement that prints "The number is zero" when num is 0.
 let num = 0;
-// * your if statement here *
-// if (!(num && 0)) {
-//   console.log("The number is zero");
-// } else {
-//   console.log("its not zero");
+
+for (let i = 1; i <= 100; i++) {
+  num += i;
+}
+
+console.log(num);
+// for loop: variable, what you want variable to end up equaling, and your incrementation
+// for (let i = 2; i <= 100; i++) {
+//   console.log(i);
 // }
 
-console.log("_______________");
+let n = 0;
+let whileTotal = 0;
 
-// * your if statement here *
-if (!num) {
-  console.log("The number is zero");
-} else {
-  console.log("its not zero");
+while (n <= 100) {
+  whileTotal += n;
+  n++;
 }
+
+console.log(whileTotal);
