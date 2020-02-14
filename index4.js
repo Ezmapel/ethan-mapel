@@ -6,11 +6,11 @@ const pizza = {
 console.log(pizza);
 
 function changeToppings(...top) {
-  pizza.toppings = top;
+  pizza.toppings.push(...top);
 }
 console.log("");
-console.log("Now for some pizza with new toppings");
+console.log("Add those toppings on");
 
-changeToppings("pepperoni", "pineapple");
+changeToppings("pepperoni", "mushrooms");
 
 console.log(pizza);
