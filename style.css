@@ -1,0 +1,53 @@
+/* 1. add a link to this file in index.html */
+/* 2. use the following types of selectors:
+    - class & id selectors
+    - chain a class selector onto a element selector
+    - group two or more selectors
+    - select all the child list items from one of your lists
+    - select an element that is a sibling of another element */
+/* 3. Box Model:
+    - use the universal selector to give all elements a border
+    - add padding and margin on some elements
+    - add padding and margin only on certain sides of some elements */
+/* 4. use a pseudo-class to have at least one element change color when someone hovers over it */
+/* CSS Properties (MDN): https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index */
+
+
+
+* {
+  border: 1px solid green;
+  font-family: monospace;
+}
+
+p {
+  font-size: 14px;
+}
+
+.class1 {
+  font-style: italic;
+}
+
+.class2 {
+  font-variant-caps: all-petite-caps;
+}
+
+#id1 {
+  font-weight: bolder;
+}
+
+li:hover {
+  font-size: 30px;
+}
+
+img {
+  max-width: 5%;
+}
+
+img:hover {
+  max-width: 50%;
+}
+
+#sup:hover {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 500px;
+}

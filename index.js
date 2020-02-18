@@ -1,20 +1,23 @@
-function fizzBuzz() {
-  for (i = 0; i < 101; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-    } else i % 5 === 0;
-    console.log("Buzz");
-  }
+// "regular" functions
+function greet(name) {
+  return `Hello ${name}!`;
 }
-console.log(fizzBuzz());
 
-function fizzbuzz(number) {
-  let fizz = !(number % 3) ? "fizz" : `"${number}"`;
-  let buzz = !(number % 5) ? "buzz" : "";
-  return `"${fizz}${buzz}"`;
+function welcome(name) {
+  return `${name}, welcome!`;
 }
-for (let i = 0; i < 100; i++) {
-  console.log(fizzbuzz(i));
+
+function informAboutSale(name) {
+  return `${name}, we're having a sale!`;
 }
+
+// function that takes a callback function as an argument
+function getNameAndShowMessage(callback) {
+  const name = "Ethan";
+  console.log(callback(name));
+}
+
+// pass each "regular" function into getAndShowMessage as a callback function
+getNameAndShowMessage(greet);
+getNameAndShowMessage(welcome);
+getNameAndShowMessage(informAboutSale);
