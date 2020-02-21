@@ -28,7 +28,7 @@ document
 function myFunction() {
   let expand = document.querySelectorAll(".x");
   console.log("expand", expand);
-  for (let i = 0; i <= expand.length; i++) {
+  for (let i = 0; i < expand.length; i++) {
     // console.log(expand[i].classList);
     expand[i].classList.toggle("x");
   }
