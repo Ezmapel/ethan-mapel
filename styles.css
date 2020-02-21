@@ -20,3 +20,7 @@ footer {
   padding: .5em;
   background-color: #ADA8B6;
 }
+
+.x {
+  display: none;
+}
