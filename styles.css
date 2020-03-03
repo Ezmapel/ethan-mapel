@@ -1,30 +1,26 @@
-body {
-  background-color: #BC8DA0;
+/* this adds a border around the flex items */
+.flex > * {
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  min-width: 30%;
+  min-height: 300px;
 }
 
-.nav-bar {
-  background-color: #A04668;
-  padding: 1em;
-  color: #D9D0DE;
-  font-size: 1.2em;
-  font-weight: 600;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-nav > ul > li {
-  border: solid 1px;
-  padding: .33em;
-  display: inline-block;
+@media print {
+  .flex {
+    border: none;
+  }
 }
 
-footer {
-  padding: .5em;
-  background-color: #ADA8B6;
-}
-
-.x {
-  display: none;
-}
-
-#test:hover {
-  ;
+@media (max-width: 700px) {
+  .flex {
+    flex-direction: column;
+  }
 }
