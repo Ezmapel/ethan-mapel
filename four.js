@@ -1,3 +1,17 @@
+function arrayOfNumbers(end = 100) {
+  const nums = [];
+  for (let i = 1; i <= end; i++) {
+    nums.push(i);
+  }
+  return nums;
+}
+
+// using reduce, sum the numbers from 1 to 200
+// hint: use the arrayOfNumbers() function to generate an array
+
+let sum1 = arrayOfNumbers(200).reduce((sum, num) => sum + num);
+console.log(sum1);
+
 // https://jsonplaceholder.typicode.com/todos
 // fetch('https://jsonplaceholder.typicode.com/todos')
 //   .then(response => response.json())
@@ -1214,14 +1228,21 @@ const dataArray = [
     completed: false
   }
 ];
-// filter the to-dos for incomplete tasks
-const toDos = dataArray.filter(task => task.completed === false); // can also do !task.completed
-console.log(toDos);
+// create an object that counts the number of complete and incomplete tasks
+let numTwo = dataArray.reduce((acc, curr) => {
+  if (curr.completed) {
+    return (acc.finishedTasks += 1);
+  }
+  {
+    return (acc.incompleteTasks += 1);
+  }
+}, {});
+console.log(numTwo);
 
-// filter for user 6's tasks
-const userSix = dataArray.filter(user => user.id === 6);
-console.log("USER SIX", userSix);
-
-// filter for tasks with a title less than 24 characters long
-const lessThan = dataArray.filter(name => name.title.length < 24);
-console.log("LESS THAN 24", lessThan);
+// create an object that summarizes the tasks for each user: task count, totals for complete and incomplete tasks
+let numThree = dataArray.reduce((acc, curr, i) => {
+  acc[i].taskCount += 1;
+  acc[i].totalComplete += 1;
+  acc[i].totalIncomplete += 1;
+}, {});
+console.log(numThree);
